@@ -1226,7 +1226,8 @@ function addFilter() {
     dijit.byId('stackContainer').addChild(filterCp);
     dojo.addClass(dojo.byId('filterPanel'), 'panel_content');
 
-	var treeQueryTask = new esri.tasks.QueryTask(map.getLayer(map.graphicsLayerIds[0]).url);
+    //var treeQueryTask = new esri.tasks.QueryTask(map.getLayer(map.graphicsLayerIds[0]).url);  //show all activations
+    var treeQueryTask = new esri.tasks.QueryTask(map.getLayer(map.graphicsLayerIds[2]).url);  //showa activatons with targets
 	var treeQuery = new esri.tasks.Query();
 	var statDef1 = new esri.tasks.StatisticDefinition();
 	var statDef2 = new esri.tasks.StatisticDefinition();
